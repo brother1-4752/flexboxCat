@@ -1,0 +1,35 @@
+.playground {
+  display: flex;
+  justify-content: center;
+}
+
+#board {
+  position: relative;
+  display: flex;
+  width: 50vw;
+  height: 51vw;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 100vh;
+  max-height: 100vh;
+  padding: 2em;
+  overflow: hidden;
+  background-color: var(--white);
+  /* js에서 justify-content 조절해서 게임 구현 */
+  /* justify-content: space-between; */
+}
+
+#house {
+  width: 60px;
+  height: 60px;
+  background-color: green;
+}
+
+#background {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  top: 2em;
+  right: 2em;
+}

@@ -1,0 +1,58 @@
+#editor {
+  height: 250px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--darkblack);
+  display: flex;
+  position: relative;
+}
+
+.line-numbers {
+  color: var(--gray);
+  width: 30px;
+  text-align: center;
+  border-right: 1px solid var(--gray);
+  font-size: 16px;
+}
+
+.next-btn {
+  position: absolute;
+  right: 0.8em;
+  bottom: 0.8em;
+}
+
+.editor-code {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.editor-code--text {
+  width: calc(100% - 34px);
+  height: 24px;
+  margin-left: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+#after {
+  line-height: 1;
+}
+
+.next-btn {
+  width: 55px;
+  height: 35px;
+  background-color: var(--pink);
+  opacity: 0.5;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* #1E1E1E */
