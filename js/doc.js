@@ -11,8 +11,8 @@ const stages__indicator = document.querySelector(".stages__indicator");
 const stagesWrapper = document.querySelector(".stages-wrapper");
 const stageMarkers = document.querySelectorAll(".stage-marker");
 const currentStage = document.querySelector(".current");
-const arrow_right = document.querySelector(".arrow.right");
-const arrow_left = document.querySelector(".arrow.left");
+const arrowRight = document.querySelector(".arrow.right");
+const arrowLeft = document.querySelector(".arrow.left");
 const editorCode = document.querySelector(".editor-code--text");
 const board = document.querySelector("#board");
 const nextBtn = document.querySelector(".next-btn");
@@ -224,9 +224,11 @@ function changeStage() {
 }
 
 function updateInstructionsByArrowRight() {
-  currentStage.innerHTML = parseInt(currentStage.innerHTML) + 1;
-  for (var i = 0; i < 3; i++) {
-    instructions[i].innerHTML = docs[parseInt(currentStage.innerHTML)][i];
+  if (docs[parseInt(currentStage.innerHTML) + 1] != undefined) {
+    currentStage.innerHTML = parseInt(currentStage.innerHTML) + 1;
+    for (var i = 0; i < 3; i++) {
+      instructions[i].innerHTML = docs[parseInt(currentStage.innerHTML)][i];
+    }
   }
 }
 
@@ -288,8 +290,8 @@ stages__indicator.addEventListener("click", toggleTooltip);
 stageMarkers.forEach(function (marker) {
   marker.addEventListener("click", changeStage);
 });
-arrow_right.addEventListener("click", updateInstructionsByArrowRight);
-arrow_left.addEventListener("click", updateInstructionsByArrowLeft);
+arrowRight.addEventListener("click", updateInstructionsByArrowRight);
+arrowLeft.addEventListener("click", updateInstructionsByArrowLeft);
 editorCode.addEventListener("input", moveCats);
 nextBtn.addEventListener("click", updateInstructionsByNextBtn);
 resetBtn.addEventListener("click", resetGame);
