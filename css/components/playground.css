@@ -20,8 +20,8 @@
 
 #house,
 #background {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 #background {
@@ -36,4 +36,12 @@
   align-items: center;
   justify-content: center;
   color: var(--darkblack);
+}
+
+.cats {
+  width: 100px;
+  height: 100px;
+}
+.kitty {
+  z-index: 99;
 }
