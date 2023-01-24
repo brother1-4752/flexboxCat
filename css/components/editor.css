@@ -1,3 +1,5 @@
+@import "../animation/animation.css";
+
 #editor {
   height: 250px;
   font-family: "Source Code Pro", monospace;
@@ -55,4 +57,8 @@
   border-radius: 5px;
 }
 
-/* #1E1E1E */
+.animated-btn {
+  opacity: 1;
+  -webkit-animation: wobble-hor-bottom 1.5s infinite both;
+  animation: wobble-hor-bottom 1.5s infinite both;
+}

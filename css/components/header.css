@@ -2,7 +2,7 @@
   width: 50%;
   min-width: 300px;
   padding: 1.5em;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .descriptions__header {
@@ -71,6 +71,18 @@
   border-left: 15px solid var(--white);
 }
 
+.arrow-bg:hover {
+  animation: makeShadowStages 0.5s ease-in-out forwards;
+}
+
+.arrow-bg:hover > .arrow.right {
+  animation: changeArrowRightColor 0.5s ease-in-out forwards;
+}
+
+.arrow-bg:hover > .arrow.left {
+  animation: changeArrowLeftColor 0.5s ease-in-out forwards;
+}
+
 .stages__indicator {
   width: 160px;
   height: 30px;
@@ -78,6 +90,10 @@
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
+}
+
+.stages__indicator:hover {
+  animation: makeShadowStages 0.5s ease-in-out forwards;
 }
 
 .hide {
@@ -96,7 +112,7 @@
 
 .tip {
   position: absolute;
-  background-color: rgb(44, 62, 80);
+  background-color: var(--darkblack);
   line-height: 1.5;
   border-radius: 5px;
 }
@@ -114,7 +130,7 @@
   height: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-bottom: 12px solid rgb(44, 62, 80);
+  border-bottom: 12px solid var(--darkblack);
 }
 
 .stages {
@@ -136,8 +152,21 @@
   cursor: pointer;
 }
 
+.stage-marker:hover {
+  animation: makeBorderMarker 0.5s ease-in-out forwards;
+}
+
 #reset {
   margin-top: 1em;
   text-align: center;
   cursor: pointer;
+}
+
+#reset:hover {
+  animation: changeColorResetBtn 0.5s ease-in-out forwards;
+}
+
+.completed {
+  background-color: var(--pink);
+  border: 2px solid var(--white);
 }

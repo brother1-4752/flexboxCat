@@ -1,12 +1,14 @@
 .playground {
+  width: 50%;
   display: flex;
   justify-content: center;
+  background-color: var(--white);
 }
 
 #board {
   position: relative;
   display: flex;
-  width: 50vw;
+  width: 51vw;
   height: 51vw;
   min-width: 300px;
   min-height: 300px;
@@ -14,22 +16,24 @@
   max-height: 100vh;
   padding: 2em;
   overflow: hidden;
-  background-color: var(--white);
-  /* js에서 justify-content 조절해서 게임 구현 */
-  /* justify-content: space-between; */
 }
 
-#house {
-  width: 60px;
-  height: 60px;
-  background-color: green;
+#house,
+#background {
+  width: 50px;
+  height: 50px;
 }
 
 #background {
   position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: blue;
   top: 2em;
   right: 2em;
+}
+
+#house,
+#background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--darkblack);
 }
