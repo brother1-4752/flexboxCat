@@ -1,0 +1,28 @@
+.help {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+code {
+  padding: 0 2px;
+  background-color: var(--shadow--color);
+  font-family: "Source Code Pro", monospace;
+  color: var(--white);
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.instructions__row {
+  padding: 1em 0;
+  line-height: 1.2;
+  zoom: 0.95;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+ul > li {
+  margin-bottom: 8px;
+}

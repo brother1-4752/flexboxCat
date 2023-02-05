@@ -1,0 +1,50 @@
+.playground {
+  width: 50%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+#board__first,
+.board__second {
+  display: flex;
+  width: 51vw;
+  height: 95%;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 100vh;
+  max-height: 100vh;
+  padding: 2em;
+  overflow: hidden;
+}
+
+.board__second {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#house,
+#background {
+  width: 100px;
+  height: 100px;
+}
+
+#house,
+#background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--darkblack);
+}
+
+.cats {
+  width: 100px;
+  height: 100px;
+}
+.kitty {
+  z-index: 99;
+}

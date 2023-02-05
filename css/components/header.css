@@ -1,0 +1,172 @@
+.descriptions {
+  width: 50%;
+  min-width: 300px;
+  padding: 1.5em;
+  font-size: 24px;
+}
+
+.descriptions__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  font-family: "Fredoka One";
+  font-size: 30px;
+}
+
+.header__current-stage {
+  position: relative;
+  width: 220px;
+  height: 30px;
+  display: flex;
+  background-color: var(--shadow--color);
+  justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+  border-radius: 7px;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.arrow.disabled {
+  opacity: 0.5;
+}
+
+.arrow-bg {
+  width: 30px;
+  height: 30px;
+  background-color: var(--shadow--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px 0 0 7px;
+}
+
+.arrow-bg.right {
+  border-radius: 0 7px 7px 0;
+}
+
+.arrow.left {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 15px solid var(--white);
+}
+
+.arrow.right {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 15px solid var(--white);
+}
+
+.arrow-bg:hover {
+  animation: makeShadowStages 0.5s ease-in-out forwards;
+}
+
+.arrow-bg:hover > .arrow.right {
+  animation: changeArrowRightColor 0.5s ease-in-out forwards;
+}
+
+.arrow-bg:hover > .arrow.left {
+  animation: changeArrowLeftColor 0.5s ease-in-out forwards;
+}
+
+.stages__indicator {
+  width: 160px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.stages__indicator:hover {
+  animation: makeShadowStages 0.5s ease-in-out forwards;
+}
+
+.hide {
+  display: none;
+}
+
+.stages-wrapper {
+  top: 30px;
+  right: 31px;
+  max-width: 160px;
+  padding: 1em 0.5em;
+  margin-top: 12px;
+  z-index: 80;
+  font-size: 12px;
+}
+
+.tip {
+  position: absolute;
+  background-color: var(--darkblack);
+  line-height: 1.5;
+  border-radius: 5px;
+}
+
+.stages-wrapper:after {
+  left: calc(50%-12px);
+}
+
+.tip:after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 70px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid var(--darkblack);
+}
+
+.stages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stage-marker {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  background-color: var(--shadow--color);
+  line-height: 26px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.stage-marker:hover {
+  animation: makeBorderMarker 0.5s ease-in-out forwards;
+}
+
+#reset {
+  margin-top: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+#reset:hover {
+  animation: changeColorResetBtn 0.5s ease-in-out forwards;
+}
+
+.completed {
+  background-color: var(--pink);
+  border: 2px solid var(--white);
+}

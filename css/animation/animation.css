@@ -1,0 +1,142 @@
+@-webkit-keyframes changeColorResetBtn {
+  from {
+  }
+  to {
+    background-color: var(--shadow--color);
+    color: var(--white);
+  }
+}
+
+@keyframes changeColorResetBtn {
+  from {
+  }
+  to {
+    background-color: var(--shadow--color);
+    color: var(--white);
+  }
+}
+
+@-webkit-keyframes makeBorderMarker {
+  from {
+  }
+  to {
+    border: 1px solid var(--white);
+  }
+}
+
+@keyframes makeBorderMarker {
+  from {
+  }
+  to {
+    border: 1px solid var(--white);
+  }
+}
+
+@-webkit-keyframes changeArrowLeftColor {
+  from {
+  }
+  to {
+    border-right: 15px solid var(--pink);
+  }
+}
+
+@keyframes changeArrowLeftColor {
+  from {
+  }
+  to {
+    border-right: 15px solid var(--pink);
+  }
+}
+
+@-webkit-keyframes changeArrowRightColor {
+  from {
+  }
+  to {
+    border-left: 15px solid var(--pink);
+  }
+}
+
+@keyframes changeArrowRightColor {
+  from {
+  }
+  to {
+    border-left: 15px solid var(--pink);
+  }
+}
+
+@-webkit-keyframes makeShadowStages {
+  from {
+  }
+  to {
+    color: var(--pink);
+    background-color: var(--white);
+  }
+}
+
+@keyframes makeShadowStages {
+  from {
+  }
+  to {
+    color: var(--pink);
+    background-color: var(--white);
+  }
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-10px) rotate(-6deg);
+    transform: translateX(-10px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(7px) rotate(6deg);
+    transform: translateX(7px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-7px) rotate(-3.6deg);
+    transform: translateX(-7px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(4px) rotate(2.4deg);
+    transform: translateX(4px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-3px) rotate(-1.2deg);
+    transform: translateX(-3px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-10px) rotate(-6deg);
+    transform: translateX(-10px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(7px) rotate(6deg);
+    transform: translateX(7px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-7px) rotate(-3.6deg);
+    transform: translateX(-7px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(4px) rotate(2.4deg);
+    transform: translateX(4px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-3px) rotate(-1.2deg);
+    transform: translateX(-3px) rotate(-1.2deg);
+  }
+}
