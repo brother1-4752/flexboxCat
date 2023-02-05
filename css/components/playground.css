@@ -5,8 +5,8 @@
   background-color: var(--white);
 }
 
-#board {
-  position: relative;
+#board__first,
+.board__second {
   display: flex;
   width: 51vw;
   height: 51vw;
@@ -22,12 +22,6 @@
 #background {
   width: 100px;
   height: 100px;
-}
-
-#background {
-  position: absolute;
-  top: 2em;
-  right: 2em;
 }
 
 #house,

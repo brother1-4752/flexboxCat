@@ -14,7 +14,7 @@ const currentStage = document.querySelector(".current");
 const arrowRight = document.querySelector(".arrow.right");
 const arrowLeft = document.querySelector(".arrow.left");
 const editorCode = document.querySelector(".editor-code--text");
-const board = document.querySelector("#board");
+const boardFirst = document.querySelector("#board__first");
 const nextBtn = document.querySelector(".next-btn");
 const resetBtn = document.querySelector("#reset");
 
@@ -254,7 +254,7 @@ function moveCats() {
 
   justifyContent.forEach((value) => {
     if (code.includes(`justify-content:${value}`)) {
-      board.style.justifyContent = `${value}`;
+      boardFirst.style.justifyContent = `${value}`;
     }
 
     if (code.includes("justify-content:flex-end")) {
@@ -269,7 +269,7 @@ function updateInstructionsByNextBtn() {
   if (nextBtn.classList.contains("animated-btn")) {
     updateInstructionsByArrowRight();
     nextBtn.classList.remove("animated-btn");
-    board.style.justifyContent = "flex-start";
+    boardFirst.style.justifyContent = "flex-start";
     editorCode.value = "";
     stageMarkers[parseInt(currentStage.innerHTML) - 2].classList.add(
       "completed"
